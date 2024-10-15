@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07 Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>
+            Dog Lodging Calculator
+        </h1>
+    </header>
+    <div class="form">
+        <form id="price_form" action="">
+            <label for="size">Dog Size: </label>
+            <select name="size" id="size">
+                <option value="small">Small ($30/day)</option>
+                <option value="large">Large ($32/day)</option>
+            </select>
+            <br>
+            <label for="days">Number of Days:</label>
+            <input type="text" id="days" name="days">
+            <br>
+            <input type="button" onclick="calculateDogPrice()" value="Calculate Price">
+        </form>
+    </div>
+    <div class="price-display" id="price-display">
+        <h2>Price: </h2>
+        <p id="price"></p>
+        <h2>Tax: </h2>
+        <p id="tax"></p>
+        <h2>Total: </h2>
+        <p id="total"></p>
+    </div>
+    
+</body>
+</html>
